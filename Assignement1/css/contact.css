@@ -1,0 +1,88 @@
+section {
+    background-color: rgb(255, 230, 197);
+    margin: 20px 60px 0 60px;
+    padding: 30px 40px 30px 40px;
+    border: solid rgb(131, 99, 58) 2px;
+    border-radius: 1rem;
+}
+
+.container {
+    width: 200px;
+    background-color: #f3c07a;
+    justify-self: center;
+    padding: 20px;
+    border-style: solid;
+    border-color: #242424;
+    border-radius: 2rem;
+    font-size: larger;
+    color: rgb(172, 102, 37);
+    margin: 10px 0 10px 0;
+}
+
+input {
+    padding: 10px;
+    border: solid rgb(131, 99, 58) 2px;
+    border-radius: 1rem;
+    background-color: #faebd6;
+}
+
+textarea {
+    border: solid rgb(131, 99, 58) 2px;
+    border-radius: 1rem;
+    background-color: #faebd6;
+    padding: 20px;
+    max-width: 150px;
+    max-height: 220px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    padding: 20px;
+    margin: 20px 0 0 7px;
+    background-color: #f3c07a;
+    border: solid rgb(131, 99, 58) 2px;
+    border-radius: 1rem;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #fad7a6;
+    color: #744606;
+}
+
+@media (min-width: 1180px){
+#containers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+#containers >:last-child {
+    grid-column: 1/-1;
+    align-self: center;
+    padding: 40px 120px 40px 120px;
+}
+}
+
+@media (min-width: 920px) and (max-width: 1179px) {
+    #containers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #containers >:last-child {
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+}
+
+section {
+    margin: 20px 150px 0 150px;
+}
+}
+
+
+
+
+
